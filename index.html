@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/de13f0750c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+    <title>Basic calculator</title>
+</head>
+
+<body>
+    <div calss="container">
+        <h1>Basic calculator</h1>
+        <form name="forms">
+            <div class="calc">
+                <input type="text" id="answer" name="screen" placeholder="Nothing here">
+                <br>
+                <input type="button" value=" 1 " onclick="forms.screen.value+='1',vib()">
+                <input type="button" value=" 2 " onclick="forms.screen.value+='2',vib()">
+                <input type="button" value=" 3 " onclick="forms.screen.value+='3',vib()">
+                <input type="button" value=" AC " onclick="forms.screen.value ='',vib()">
+                <br>
+                <input type="button" value=" 4 " onclick="forms.screen.value+='4',vib()">
+                <input type="button" value=" 5 " onclick="forms.screen.value+='5',vib()">
+                <input type="button" value=" 6 " onclick="forms.screen.value+='6',vib()">
+                <input type="button" value=" + " onclick="forms.screen.value+='+',vib()">
+                <br>
+                <input type="button" value=" 7 " onclick="forms.screen.value+='7',vib()">
+                <input type="button" value=" 8 " onclick="forms.screen.value+='8',vib()">
+                <input type="button" value=" 9 " onclick="forms.screen.value+='9',vib()">
+                <input type="button" value=" - " onclick="forms.screen.value+='-',vib()">
+                <br>
+                <input type="button" value=" . " onclick="forms.screen.value+='.',vib()">
+                <input type="button" value=" 0 " onclick="forms.screen.value+='0',vib()">
+                <input type="button" value=" = " onclick="forms.screen.value = eval(forms.screen.value),vib()">
+                <input type="button" value=" * " onclick="forms.screen.value+='*',vib()">
+                <br>
+                <input type="button" value=" ( " onclick="forms.screen.value+='(',vib()">
+                <input type="button" value=" ) " onclick="forms.screen.value+=')',vib()">
+                <input type="button" value=" % " onclick="forms.screen.value+='%',vib()">
+                <input type="button" value=" / " onclick="forms.screen.value+='/',vib()">
+                <br>
+            </div>
+        </form>
+    </div>
+    <style>
+        body {
+            background-color: black;
+            color: #ffffff;
+            align-items: center;
+            text-align: center;
+            font-family: 'Neonderthaw', cursive;
+            font-weight: 50;
+            color: #23d8c0;
+            text-shadow: 5px 5px 5px #d553a0;
+            font-size: x-large;
+        }
+
+        .container {
+            margin: auto;
+        }
+
+        #answer {
+            width: 300px;
+            border-radius: 10px;
+            padding-left: 10px;
+            border-color: #d553a0;
+        }
+
+        input {
+            font-size: 30px;
+            width: 65px;
+            height: 55px;
+            margin: 5px;
+            border: 0px solid;
+            border-radius: 8px;
+            background: #17171b;
+            outline: none;
+            color: #ffffff;
+        }
+
+        .calc {
+            background: #17171b;
+            padding: 10px;
+            border-radius: 20px;
+            display: inline-block;
+            color: #ffffff;
+        }
+
+        input {
+            box-shadow: 3px 3px 3px #d553a0, -3px -3px 3px #23d8c0;
+        }
+
+        input:active {
+            box-shadow: inset 5px 5px 5px whitesmoke, inset -5px -5px 5px whitesmoke;
+        }
+
+        #answer {
+            box-shadow: inset 5px 5px 5px grey, inset -5px -5px 5px grey;
+        }
+
+        .calc {
+            box-shadow: 5px 5px 5px grey, -5px -5px 5px grey;
+        }
+    </style>
+</body>
+<!--paleta
+#d553a0 Rosa
+#23d8c0 Azul
+#17171b Negro
+-->
+
+</html>
